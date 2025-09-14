@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lina Nerio Morales – Research Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #e0f0ff;
+      padding: 2em;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 0.2em;
+    }
+    .highlight {
+      background-color: #fff3cd;
+      border-left: 5px solid #ffc107;
+      padding: 1em;
+      margin: 1em auto;
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+      cursor: pointer;
+      transition: box-shadow 0.3s ease;
+    }
+    .highlight:hover {
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .section {
+      padding: 2em;
+      max-width: 800px;
+      margin: auto;
+    }
+    .download-btn {
+      background-color: #007bff;
+      color: white;
+      padding: 0.6em 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-bottom: 1em;
+    }
+    .download-btn:hover {
+      background-color: #0056b3;
+    }
+    .collapsible {
+      background-color: #eee;
+      cursor: pointer;
+      padding: 1em;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1em;
+      transition: background-color 0.3s ease;
+    }
+    .collapsible:hover {
+      background-color: #ddd;
+    }
+    .content {
+      padding: 0 1em;
+      display: none;
+      overflow: hidden;
+      background-color: #f1f1f1;
+    }
+    footer {
+      background-color: #e0f0ff;
+      padding: 2em;
+      text-align: center;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Lina Nerio Morales</h1>
+  <p>My research examines how stress reshapes reward and attachment circuits, with a focus on CRF and dopamine signaling in social behavior. I integrate fiber photometry, behavior quantification, and molecular assays to uncover sex-specific mechanisms.</p>
+</header>
+
+<div class="highlight" onclick="document.getElementById('cv-section').scrollIntoView({behavior: 'smooth'})">
+  🎓 Graduating May 2026 – Seeking postdoctoral or research opportunities in behavioral neuroscience, neurobiology, or translational psychiatry.
+</div>
+
+<div class="section">
+  <h2>Research Statement</h2>
+  <button class="download-btn">📥 Download Research Statement (PDF)</button>
+  <ul>
+    <li>Focused on translational models of social deficits in psychiatric and neurodevelopmental disorders</li>
+    <li>Developed prairie vole model to study stress-induced changes in social bonding</li>
+    <li>Used CRISPR/Cas9 to manipulate oxytocin receptors and assess behavioral outcomes</li>
+    <li>Investigated CRF and dopamine signaling using fiber photometry</li>
+    <li>Explored sex-specific mechanisms of social avoidance and attachment</li>
+    <li>Current GPA: 4.0</li>
+  </ul>
+</div>
+
+<div class="section" id="cv-section">
+  <h2>Curriculum Vitae <button class="download-btn">📥 Download CV (PDF)</button></h2>
+  <button class="collapsible">🔍 View CV Summary</button>
+  <div class="content">
+    <p><strong>Education:</strong><br>
+      PhD in Pharmacology and Toxicology – University of Kansas (2022–Present)<br>
+      MSc in Pharmacology and Toxicology – University of Kansas (2020–2022)<br>
+      Bachelor in Pharmacy – Universidad Nacional de Colombia (2010–2016)<br>
+      <em>Current GPA: 4.0</em>
+    </p>
+    <p><strong>Skills:</strong> CRISPR/Cas9, fiber photometry, receptor autoradiography, immunoassays, Python, SPSS</p>
+    <p><strong>Awards:</strong> Lester Gibbs Travel Award, Mossberg Honors Symposium Award, Fulbright Scholar</p>
+    <p><strong>Presentations:</strong> Society for Neuroscience, Society for Social Neuroscience, Mossberg Symposium</p>
+  </div>
+</div>
+
+<footer>
+  <h3>📬 Let’s Connect</h3>
+  <p>Email: linakneriom@gmail.com | lkneriom@ku.edu<br>
+     Phone: +1 (785) 371 7167<br>
+     <a href="https://linkedin.com/in/lkneriom">LinkedIn</a> | 
+     <a href="https://orcid.org/0000-0002-1355-5174">ORCID</a> | 
+     <a href="https://scholar.google.com/citations?user=uuPowDMAAAAJ">Google Scholar</a>
+  </p>
+</footer>
+
+<script>
+  const coll = document.querySelector(".collapsible");
+  const content = document.querySelector(".content");
+  coll.addEventListener("click", function() {
+    this.classList.toggle("active");
+    content.style.display = content.style.display === "block" ? "none" : "block";
+  });
+</script>
+
+</body>
+</html>
